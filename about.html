@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — The Margin</title>
+  <meta name="description" content="The Margin is Singapore's student publication for economics, policy, and financial trends.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-rule"></span>
+        THE MARGIN
+      </a>
+      <div class="nav-links">
+        <a href="index.html?cat=cost-of-living">Cost of Living</a>
+        <a href="index.html?cat=policy">Policy</a>
+        <a href="index.html?cat=careers">Careers</a>
+        <a href="index.html?cat=education">Education</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="index.html?cat=cost-of-living">Cost of Living</a>
+      <a href="index.html?cat=policy">Policy</a>
+      <a href="index.html?cat=careers">Careers</a>
+      <a href="index.html?cat=education">Education</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <main class="about-main">
+    <div class="about-eyebrow">About this publication</div>
+    <h1 class="about-headline">The Margin is written for students who want to understand the economy they're inheriting.</h1>
+
+    <p class="about-body">We cover Singapore's economic policies, cost of living pressures, and global financial trends — always through the lens of how they affect students. Our goal is to build economic literacy without dumbing it down.</p>
+
+    <p class="about-body">Every article is grounded in data, written with precision, and designed to be useful to someone navigating university, internship applications, housing decisions, or the first years of their career.</p>
+
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="about-card-label">Founded</div>
+        <div class="about-card-value">2026, Singapore</div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-label">Focus</div>
+        <div class="about-card-value">Policy, Finance, Careers</div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-label">Audience</div>
+        <div class="about-card-value">Students &amp; graduates</div>
+      </div>
+    </div>
+
+    <h2 style="font-family:var(--font-display);font-size:24px;font-weight:700;letter-spacing:-0.015em;margin-bottom:12px;">Editorial standards</h2>
+    <p class="about-body">We do not publish sponsored content. Every claim is sourced. When we use statistics, we link to the primary source. Opinion pieces are clearly labelled. We correct errors promptly and transparently.</p>
+
+    <div class="write-box" id="write">
+      <div>
+        <div class="write-title">Write for The Margin</div>
+        <div class="write-desc">We publish student contributors who can bring original data, first-person reporting, or sharp policy analysis. Pitches should be 2–3 sentences: the argument, the evidence, and why it matters to students now.</div>
+      </div>
+      <a href="mailto:pitch@themargin.sg" class="write-btn">Send a pitch →</a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-rule" style="background:#444;"></span>
+        THE MARGIN
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="about.html#write">Write for Us</a>
+      </div>
+      <div class="footer-copy">© 2026 The Margin, Singapore</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

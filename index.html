@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Margin — Where Policy Meets Your Paycheck</title>
+  <meta name="description" content="Singapore's student publication for economics, policy, and financial trends.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&family=Source+Serif+4:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="nav-rule"></span>
+        THE MARGIN
+      </a>
+      <div class="nav-links">
+        <a href="index.html?cat=cost-of-living">Cost of Living</a>
+        <a href="index.html?cat=policy">Policy</a>
+        <a href="index.html?cat=careers">Careers</a>
+        <a href="index.html?cat=education">Education</a>
+        <a href="about.html">About</a>
+      </div>
+      <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    </div>
+    <div class="nav-mobile" id="mobileMenu">
+      <a href="index.html?cat=cost-of-living">Cost of Living</a>
+      <a href="index.html?cat=policy">Policy</a>
+      <a href="index.html?cat=careers">Careers</a>
+      <a href="index.html?cat=education">Education</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+
+  <!-- CATEGORY STRIP -->
+  <div class="cat-strip">
+    <div class="cat-inner">
+      <button class="cat-btn active" onclick="filterCat('all', this)">All</button>
+      <button class="cat-btn" onclick="filterCat('cost-of-living', this)">Cost of Living</button>
+      <button class="cat-btn" onclick="filterCat('policy', this)">Policy</button>
+      <button class="cat-btn" onclick="filterCat('education', this)">Education</button>
+      <button class="cat-btn" onclick="filterCat('careers', this)">Careers</button>
+      <button class="cat-btn" onclick="filterCat('global', this)">Global</button>
+    </div>
+  </div>
+
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero" id="hero-article">
+      <div class="hero-text">
+        <span class="tag tag-cost">Cost of Living</span>
+        <h1 class="hero-title">What the GST Hike Really Costs a University Student</h1>
+        <p class="hero-dek">Rising food prices, higher utility bills, and a stagnant bursary system — we ran the numbers on what Singapore's tax changes mean for your monthly budget.</p>
+        <div class="hero-meta">
+          <span>Ravi Menon</span>
+          <span class="dot"></span>
+          <span>18 Apr 2026</span>
+          <span class="dot"></span>
+          <span>6 min read</span>
+        </div>
+        <a href="articles/gst-hike.html" class="read-btn">Read article →</a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stat-card">
+          <div class="stat-num">+$340</div>
+          <div class="stat-label">Estimated annual cost increase per student</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA STRIP -->
+    <div class="data-strip">
+      <div class="data-item"><div class="data-num">9%</div><div class="data-lbl">GST rate 2025</div></div>
+      <div class="data-div"></div>
+      <div class="data-item"><div class="data-num">4.1%</div><div class="data-lbl">Core inflation Q1 2026</div></div>
+      <div class="data-div"></div>
+      <div class="data-item"><div class="data-num">62k</div><div class="data-lbl">University enrolments</div></div>
+      <div class="data-div"></div>
+      <div class="data-item"><div class="data-num">5+ yrs</div><div class="data-lbl">Average BTO wait time</div></div>
+    </div>
+
+    <!-- ARTICLE GRID -->
+    <section class="grid-section">
+      <div class="grid-header">Latest Analysis</div>
+      <div class="article-grid" id="articleGrid">
+
+        <article class="card" data-cat="policy">
+          <span class="tag tag-policy">Policy</span>
+          <h2 class="card-title">CPF for Students: What the New Rules Actually Change</h2>
+          <p class="card-dek">The amendments look minor on paper. For graduates planning their first five years, they aren't.</p>
+          <div class="card-meta">12 Apr 2026 · 4 min read</div>
+          <a href="articles/cpf-students.html" class="card-link">Read →</a>
+        </article>
+
+        <article class="card" data-cat="careers">
+          <span class="tag tag-careers">Careers</span>
+          <h2 class="card-title">Why Finance Internships in Singapore Are Getting More Competitive</h2>
+          <p class="card-dek">Applications are up 40% while headcount stays flat. Here's what's actually changing the odds.</p>
+          <div class="card-meta">9 Apr 2026 · 5 min read</div>
+          <a href="articles/finance-internships.html" class="card-link">Read →</a>
+        </article>
+
+        <article class="card" data-cat="education">
+          <span class="tag tag-education">Education</span>
+          <h2 class="card-title">Tuition Grant Bonds: The Hidden Cost of Your Subsidised Degree</h2>
+          <p class="card-dek">You signed a three-year employment obligation. Most students don't know what it's actually worth.</p>
+          <div class="card-meta">5 Apr 2026 · 7 min read</div>
+          <a href="articles/tuition-grant.html" class="card-link">Read →</a>
+        </article>
+
+        <article class="card" data-cat="cost-of-living">
+          <span class="tag tag-cost">Cost of Living</span>
+          <h2 class="card-title">Singapore's Housing Ladder Has a Missing Rung</h2>
+          <p class="card-dek">BTO, resale HDB, private rental — where does a fresh graduate actually live in 2026?</p>
+          <div class="card-meta">1 Apr 2026 · 6 min read</div>
+          <a href="articles/housing-ladder.html" class="card-link">Read →</a>
+        </article>
+
+        <article class="card" data-cat="global">
+          <span class="tag tag-global">Global</span>
+          <h2 class="card-title">What a Fed Rate Cut Means for Your Student Loan</h2>
+          <p class="card-dek">When Powell speaks, SORA moves. When SORA moves, your repayments change. Here's the chain.</p>
+          <div class="card-meta">28 Mar 2026 · 5 min read</div>
+          <a href="articles/fed-rate-loan.html" class="card-link">Read →</a>
+        </article>
+
+        <article class="card" data-cat="policy">
+          <span class="tag tag-policy">Policy</span>
+          <h2 class="card-title">Reading the 2026 Budget as a Student: A Line-by-Line Guide</h2>
+          <p class="card-dek">We cut through the press release and found the three measures that will actually affect you.</p>
+          <div class="card-meta">22 Mar 2026 · 8 min read</div>
+          <a href="articles/budget-2026.html" class="card-link">Read →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT STRIP -->
+    <section class="about-strip">
+      <div class="about-strip-inner">
+        <div>
+          <div class="about-strip-label">About The Margin</div>
+          <p class="about-strip-text">A student-run publication based in Singapore covering economic policy, cost of living, and financial trends — through the lens of how they affect students.</p>
+        </div>
+        <a href="about.html" class="about-strip-btn">Learn more →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-rule" style="background:#444;"></span>
+        THE MARGIN
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="about.html#write">Write for Us</a>
+      </div>
+      <div class="footer-copy">© 2026 The Margin, Singapore</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
